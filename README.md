@@ -28,3 +28,6 @@ As mentioned above, server contains many data of the game, so it's hard to accur
 - You need to explore the way to retrieve the game client and assets.
 - Once you get it, put it in a directory following the `FileRoutes.kt`
 - You need Java 24, MongoDB community edition, Adobe AIR runtime (or adobe AIR SDK for dev).
+
+## Credits for:
+https://github.com/glennhenry/
