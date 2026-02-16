@@ -1,0 +1,1 @@
+start "Gangster Empire" cmd /k ".\gradlew.bat run"

@@ -1,0 +1,32 @@
+package dev.gangster.auth
+
+import dev.gangster.game.data.collection.PlayerAccount
+
+/**
+ * Repository which manage player accounts.
+ */
+interface PlayerAccountRepository {
+    suspend fun doesUserExist(username: String): Result<Boolean>
+
+    suspend fun getAccountByUsername(username: String): Result<PlayerAccount>
+
+    suspend fun getAccountByPlayerId(playerId: Int): Result<PlayerAccount>
+
+    suspend fun getPlayerIdByUsername(username: String): Result<Int>
+
+    suspend fun updatePlayerAccount(playerId: Int, account: PlayerAccount): Result<Unit>
+
+    suspend fun updateLastLogin(playerId: Int, lastLogin: Long): Result<Unit>
+
+    /**
+     * Return the epoch millis a player's ban will be lifted. Zero means player is not banned.
+     */
+    suspend fun playerBanExpireAt(playerId: Int): Result<Long>
+
+    /**
+     * Verify credentials of the given username and password.
+     *
+     * @return playerId for the corresponding username if success.
+     */
+    suspend fun verifyCredentials(username: String, password: String): Result<Int>
+}

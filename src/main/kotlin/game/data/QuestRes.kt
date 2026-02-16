@@ -1,0 +1,82 @@
+package dev.gangster.game.data
+
+data class QuestRes(
+    val questId: Int,
+    val questDescription: String,
+)
+
+object QuestIds {
+    const val EARN_CASH = 1
+    const val EARN_CASH_DURING_MISSIONS = 2
+    const val EARN_CASH_IN_WANTED_FIGHTS = 3
+    const val EARN_CASH_IN_GANG_WARS = 4
+    const val EARN_CASH_IN_SURVIVAL = 5
+    const val EARN_CASH_FROM_PROTECTION_MONEY = 6
+    const val EARN_CASH_FROM_DUELS = 7
+    const val EARN_XP = 8
+    const val EARN_XP_DURING_MISSIONS = 9
+    const val EARN_XP_IN_WANTED_FIGHTS = 10
+    const val EARN_XP_IN_GANG_WARS = 11
+    const val EARN_XP_IN_SURVIVAL = 12
+    const val EARN_XP_IN_FAMILY_WARS = 13
+    const val COMPLETE_MISSIONS = 14
+    const val COMPLETE_MISSIONS_IN_NEW_YORK = 15
+    const val COMPLETE_MISSIONS_IN_MIAMI = 16
+    const val COMPLETE_MISSIONS_IN_HONG_KONG = 17
+    const val USE_ENERGY = 18
+    const val USE_ENERGY_DURING_MISSIONS = 19
+    const val USE_ENERGY_IN_SURVIVAL = 20
+    const val EARN_GOLD_DURING_MISSIONS = 21
+    const val WIN_ITEMS_IN_MISSIONS = 22
+    const val CHALLENGE_OTHER_PLAYERS_TO_A_DUEL = 23
+    const val WIN_DUELS = 24
+    const val WIN_DUELS_AGAINST_BULLIES = 25
+    const val WIN_DUELS_AGAINST_ROGUES = 26
+    const val WIN_DUELS_AGAINST_TACTICIANS = 27
+    const val WIN_HONOR_IN_DUELS = 28
+    const val INCREASE_YOUR_ATTACK_POWER = 29
+    const val INCREASE_YOUR_ENDURANCE = 30
+    const val INCREASE_YOUR_LUCK = 31
+    const val INCREASE_YOUR_TOUGHNESS = 32
+    const val FIGHT_IN_A_GANG_WAR = 33
+    const val FIGHT_THE_POLICE = 34
+    const val FIGHT_THE_POLICE_IN_NEW_YORK = 35
+    const val FIGHT_THE_POLICE_IN_MIAMI = 36
+    const val FIGHT_THE_POLICE_IN_HONG_KONG = 37
+    const val REACH_CHECKPOINT_1_IN_SURVIVAL = 38
+    const val REACH_CHECKPOINT_2_IN_SURVIVAL = 39
+    const val REACH_CHECKPOINT_3_IN_SURVIVAL = 40
+    const val REACH_CHECKPOINT_4_IN_SURVIVAL = 41
+    const val REACH_CHECKPOINT_5_IN_SURVIVAL = 42
+    const val REACH_CHECKPOINT_6_IN_SURVIVAL = 43
+    const val WIN_THE_FINAL_BATTLE_IN_SURVIVAL = 44
+    const val USE_DYNAMITE_DURING_COMBAT = 45
+    const val USE_THROWING_KNIVES_DURING_COMBAT = 46
+    const val USE_STUN_GRENADES_DURING_COMBAT = 47
+    const val USE_SMOKE_GRENADES_DURING_COMBAT = 48
+    const val USE_FIRST_AID_KITS_DURING_COMBAT = 49
+    const val USE_BLOOD_BAGS_DURING_COMBAT = 50
+    const val USE_DEFIBRILLATORS_DURING_COMBAT = 51
+    const val USE_WOUND_DRESSINGS_DURING_COMBAT = 52
+    const val USE_HEADACHE_PILLS_DURING_COMBAT = 53
+    const val USE_A_SHOT_OF_ADRENALINE_DURING_COMBAT = 54
+    const val EARN_ACTIVITY_POINTS = 55
+    const val EARN_ACTIVITY_POINTS_DURING_MISSIONS = 56
+    const val EARN_ACTIVITY_POINTS_DURING_WANTED_FIGHTS = 57
+    const val EARN_ACTIVITY_POINTS_IN_GANG_WARS = 58
+    const val EARN_ACTIVITY_POINTS_IN_SURVIVAL = 59
+    const val EARN_ACTIVITY_POINTS_IN_DUELS = 60
+    const val COMPLETE_MISSIONS_THAT_WILL_BRING_YOU_GOLD = 61
+    const val WIN_AGAINST_THE_POLICE = 62
+    const val WIN_GANG_WARS = 63
+    const val CONFIRM_YOUR_E_MAIL_ADDRESS = 64
+    const val HAVE_A_DRINK_AT_THE_BARTENDER_S = 65
+    const val WIN_WANTED_FIGHTS = 66
+    const val ACTIVATE_BOOSTER_FOR_MISSIONS = 67
+    const val HIRE_A_GANG_MEMBER = 68
+    const val BUY_AN_ITEM_ON_THE_BLACK_MARKET = 69
+    const val BUY_AN_ITEM_IN_THE_CORNER_SHOP = 70
+    const val DEFEAT_OPPONENTS_IN_DISTRICT_X_OF_Y_1 = 71
+    const val DEFEAT_OPPONENTS_IN_DISTRICT_X_OF_Y_2 = 72
+    const val PARTICIPATE_IN_A_FAMILY_WAR = 73
+}

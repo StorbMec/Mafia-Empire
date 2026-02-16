@@ -1,0 +1,11 @@
+package dev.gangster.game.data.collection.model
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class ServerMetadata(
+    val notes: String? = null,
+    val banExpireAt: Long = 0,
+    val flags: Map<String, Boolean> = emptyMap(),
+    val extra: Map<String, String> = emptyMap(),
+)
